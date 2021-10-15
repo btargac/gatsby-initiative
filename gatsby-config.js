@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-  	description: "Playing with Gatsby just for fun",
-    title: "My Gatsby Initiative",
+  	description: "The long awaited blog from Targac",
+    title: "Targac's Blog",
   },
   plugins: [
   	`gatsby-plugin-styled-components`,
@@ -14,8 +14,14 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/blog/`,
       },
-    }
-    ,
+    },
+    // {
+    //   resolve: "gatsby-source-sanity",
+    //   options: {
+    //     projectId: "8j6daael",
+    //     dataset: "production",
+    //   },
+    // },
     "gatsby-plugin-mdx",
   ]
 };

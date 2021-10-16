@@ -15,13 +15,13 @@ module.exports = {
         path: `${__dirname}/blog/`,
       },
     },
-    // {
-    //   resolve: "gatsby-source-sanity",
-    //   options: {
-    //     projectId: "8j6daael",
-    //     dataset: "production",
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "8j6daael",
+        dataset: "production",
+      },
+    },
     "gatsby-plugin-mdx",
   ]
 };

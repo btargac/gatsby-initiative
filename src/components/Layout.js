@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 import {
@@ -7,7 +7,8 @@ import {
   navLinks,
   navLinkItem,
   navLinkText,
-  siteTitle
+  siteTitle,
+  siteDescription
 } from './Layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -26,6 +27,7 @@ const Layout = ({ pageTitle, children }) => {
     <main className={container}>
       <title>{data.site.siteMetadata.title}</title>
       <p className={siteTitle}>{data.site.siteMetadata.title}</p>
+      <p className={siteDescription}>{data.site.siteMetadata.description}</p>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
